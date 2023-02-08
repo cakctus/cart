@@ -38,7 +38,10 @@ const ProductList = ({ product }: Props) => {
     <Card className="product">
       <CardContent>
         <div className="product-images">
-          <img src={img} alt="" />
+          <img
+            src="http://www.thesource.ca/medias/20220121144754-108098330-A.jpg-mediaConversion-640-x-480-0?context=bWFzdGVyfGltYWdlc3wxNDczNjN8aW1hZ2UvanBlZ3xpbWFnZXMvaDczL2gwZi85NTA4MDU1MDIzNjQ2LmpwZ3wwOTQ1NzJkNzc2MGZhZTAzNDlmYjliNWZlODg5YjRmZTE3MDRmM2ZjMGM5NDk1MTZkZGUyODFkYTg4NDcxZmMx"
+            alt=""
+          />
         </div>
         <Button onClick={() => dispatch(addLike(id))}>
           {isLiked[id] ? <FavoriteIcon /> : <FavoriteBorderIcon />}
