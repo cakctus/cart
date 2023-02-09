@@ -34,8 +34,6 @@ const ProductList = ({ product }: Props) => {
 
   const dispatch = useDispatch()
 
-  console.log(img, "img")
-
   return (
     <Card className="product">
       <CardContent>

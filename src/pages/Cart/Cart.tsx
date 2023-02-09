@@ -33,7 +33,7 @@ const CartPage = (props: Props) => {
       >
         {Object.keys(productsInCart).map((item, index) => {
           return (
-            <Box sx={{ width: 1 }}>
+            <Box sx={{ width: 1 }} key={index}>
               <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={1}>
                 <Box gridColumn="span 8">
                   <Grid item xs={8}>
