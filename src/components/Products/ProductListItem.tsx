@@ -34,11 +34,13 @@ const ProductList = ({ product }: Props) => {
 
   const dispatch = useDispatch()
 
+  console.log(img, "img")
+
   return (
     <Card className="product">
       <CardContent>
         <div className="product-images">
-          <img src="../../../public/public/images/blue.jpg" alt="" />
+          <img src={img} alt="" />
         </div>
         <Button onClick={() => dispatch(addLike(id))}>
           {isLiked[id] ? <FavoriteIcon /> : <FavoriteBorderIcon />}

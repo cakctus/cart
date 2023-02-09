@@ -31,8 +31,6 @@ const App = ({ productsObject = getProductsObject(productsArray) }: Props) => {
     }
   )
 
-  console.log(productsObject)
-
   const [cartObjects, setCartObjects] = useState(productsObject)
 
   useEffect(() => {

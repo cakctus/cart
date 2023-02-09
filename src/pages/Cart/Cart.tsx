@@ -131,8 +131,13 @@ const CartPage = (props: Props) => {
           )
         })}
       </Grid>
-
-      <CartTotal />
+      <div>
+        {Object.keys(productsInCart).length >= 1 ? (
+          <CartTotal />
+        ) : (
+          <h1>No items in card</h1>
+        )}
+      </div>
     </>
   )
 }

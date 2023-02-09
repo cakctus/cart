@@ -31,6 +31,7 @@ const CartHeader = (props: Props) => {
           </div>
         )
       })}
+      {Object.keys(addToCart).length >= 1 || <span>No items in card</span>}
       <CartTotal />
     </div>
   )
